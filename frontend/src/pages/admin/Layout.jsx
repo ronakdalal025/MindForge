@@ -10,7 +10,7 @@ const Layout = () => {
   const {axios,navigate,setToken} = useAppContext();
   const logout = ()=>{
     localStorage.removeItem('token');
-    axios.defaults.header.common['Authorization'] = null;
+    axios.defaults.headers.common['Authorization'] = null;
     setToken(null);
   };
   return (
