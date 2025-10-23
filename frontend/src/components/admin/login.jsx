@@ -23,8 +23,8 @@ const Login = () => {
 
   const {axios,setToken} = useAppContext();
 
-  const [email,setEmail] = useState("");
-  const [password,setPassword] = useState("");
+  const [email,setEmail] = useState("admin@example.com");
+  const [password,setPassword] = useState("admin_admin");
   return (
     <div className='flex items-center justify-center h-screen'>
       <div className='w-full max-w-sm p-6 ma-:md:m-6 border border-primary/30 shadow-xl shadow-primary/15 rounded-lg'>
